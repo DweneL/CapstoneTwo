@@ -43,7 +43,8 @@ public class HomeScreen {
 
                 break;
             case "3":
-
+                boolean addChips = true;
+                //adds the price of chips
                 break;
             case "4":
 
