@@ -66,11 +66,37 @@ public class Drinks {
         }
     }
 
-    // i removed the setCalculateDrinkPrice method, it wasnt working so i modified
-    public void displayDrinkOrder() {
-        System.out.println("What drink would you like? " + drinkType);
-        System.out.println("What size of cup? " + size);
-        System.out.println("This is the price of the cup: $" + cost);
+        p
+
+        public String getDrinkType() {
+            return drinkType;
+        }
+
+        public void setDrinkType(String drinkType) {
+            this.drinkType = drinkType;
+        }
+
+        public String getSize() {
+            return size;
+        }
+
+        public void setCalculateDrinkPrice() {
+            size smallCup = new size("Small", 2.00);
+            size mediumCup = new size("Medium", 2.50);
+            size largeCup = new size("Large", 3.00);
+
+            System.out.println("Size: " + smallCup.getSize() + ", Price: $" + smallCup.getPrice());
+            System.out.println("Size: " + mediumCup.getSize() + ", Price: $" + mediumCup.getPrice());
+            System.out.println("Size: " + largeCup.getSize() + ", Price: $" + largeCup.getPrice());
+        }
+
+        public void displayDrinkOrder() {
+            System.out.println("What drink would you like? " + drinkType);
+            System.out.println("What size of cup? " + size);
+            System.out.println("This is the price of the cup: $" + cost);
+            System.out.println("This is the drink total: $" + setCalculateDrinkPrice();
+        }
     }
-}
+
+
 
