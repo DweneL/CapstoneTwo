@@ -66,8 +66,6 @@ public class Drinks {
         }
     }
 
-        p
-
         public String getDrinkType() {
             return drinkType;
         }
