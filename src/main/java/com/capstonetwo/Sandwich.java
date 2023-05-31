@@ -1,16 +1,16 @@
 package com.capstonetwo;
 
 public class Sandwich {
-    private BREAD bread;
-    private MEAT meat;
-    private CHEESE cheese;
+    private Bread bread;
+    private Meat meat;
+    private Cheese cheese;
     private Toppings topping;
     private String sauce;
     private String side;
     private int sandwichSize;
     private float price;
 
-    public Sandwich(BREAD bread, MEAT meat, CHEESE cheese, Toppings topping, String sauce, String side, int sandwichSize, float price) {
+    public Sandwich(Bread bread, Meat meat, Cheese cheese, Toppings topping, String sauce, String side, int sandwichSize, float price) {
         this.bread = bread;
         this.meat = meat;
         this.cheese = cheese;
@@ -21,27 +21,27 @@ public class Sandwich {
         this.price = price;
     }
 
-    public BREAD getBread() {
+    public Bread getBread() {
         return bread;
     }
 
-    public void setBread(BREAD bread) {
+    public void setBread(Bread bread) {
         this.bread = bread;
     }
 
-    public MEAT getMeat() {
+    public Meat getMeat() {
         return meat;
     }
 
-    public void setMeat(MEAT meat) {
+    public void setMeat(Meat meat) {
         this.meat = meat;
     }
 
-    public CHEESE getCheese() {
+    public Cheese getCheese() {
         return cheese;
     }
 
-    public void setCheese(CHEESE cheese) {
+    public void setCheese(Cheese cheese) {
         this.cheese = cheese;
     }
 
