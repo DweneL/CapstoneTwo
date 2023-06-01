@@ -1,6 +1,6 @@
 package com.capstonetwo;
 
-public enum Bread {
+public enum BreadENUM {
     WHITE,
     WHEAT,
     RYE,

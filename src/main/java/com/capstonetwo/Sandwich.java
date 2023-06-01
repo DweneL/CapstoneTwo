@@ -1,13 +1,11 @@
 package com.capstonetwo;
 
-import java.util.Scanner;
-
 public class Sandwich {
-    private Bread bread;
-    private Meat meat;
-    private Cheese cheese;
-    private Toppings topping;
-    private Sauces sauce;
+    private BreadENUM breadENUM;
+    private MeatENUM meat;
+    private CheeseENUM cheese;
+    private ToppingsENUM topping;
+    private SaucesENUM sauce;
     private String side;
     private int sandwichSize;
     private static double price;
@@ -18,8 +16,8 @@ public class Sandwich {
     private boolean isExtraCheeseAdded = false;
     private boolean isToasted = false;
 
-    public Sandwich(Bread bread, Meat meat, Cheese cheese, Toppings topping, Sauces sauce, String side, int sandwichSize, double price, boolean isCheeseAdded, boolean isMeatAdded, boolean isToppingsAdded, boolean isExtraMeatAdded, boolean isExtraCheeseAdded, boolean isToasted) {
-        this.bread = bread;
+    public Sandwich(BreadENUM breadENUM, MeatENUM meat, CheeseENUM cheese, ToppingsENUM topping, SaucesENUM sauce, String side, int sandwichSize, double price, boolean isCheeseAdded, boolean isMeatAdded, boolean isToppingsAdded, boolean isExtraMeatAdded, boolean isExtraCheeseAdded, boolean isToasted) {
+        this.breadENUM = breadENUM;
         this.meat = meat;
         this.cheese = cheese;
         this.topping = topping;
@@ -49,7 +47,7 @@ public class Sandwich {
         }
     }
 
-    public void addMeat(Meat meat){
+    public void addMeat(MeatENUM meat){
         if (isMeatAdded == true && sandwichSize == 4){
             this.price += 1.00;
         } if (isMeatAdded == true && sandwichSize == 8){
@@ -59,7 +57,7 @@ public class Sandwich {
         }
     }
 
-    public void addExtraMeat(Meat meat){
+    public void addExtraMeat(MeatENUM meat){
         if (isExtraMeatAdded == true && sandwichSize == 4){
             this.price += .50;
         } if (isExtraMeatAdded == true && sandwichSize == 8){
@@ -70,7 +68,7 @@ public class Sandwich {
 
     }
 
-    public void addCheese(Cheese cheese){
+    public void addCheese(CheeseENUM cheese){
         if (isMeatAdded == true && sandwichSize == 4){
             this.price += .75;
         } if (isMeatAdded == true && sandwichSize == 8){
@@ -80,7 +78,7 @@ public class Sandwich {
         }
     }
 
-    public void addExtraCheese(Cheese cheese){
+    public void addExtraCheese(CheeseENUM cheese){
         if(isExtraCheeseAdded == true && sandwichSize == 4){
             this.price += .30;
         } if (isExtraCheeseAdded == true && sandwichSize == 8){
@@ -91,46 +89,46 @@ public class Sandwich {
 
     }
 
-    public void addToppings (Toppings topping){
+    public void addToppings (ToppingsENUM topping){
     }
 
-    public Bread getBread() {
-        return bread;
+    public BreadENUM getBread() {
+        return breadENUM;
     }
 
-    public void setBread(Bread bread) {
-        this.bread = bread;
+    public void setBread(BreadENUM breadENUM) {
+        this.breadENUM = breadENUM;
     }
 
-    public Meat getMeat() {
+    public MeatENUM getMeat() {
         return meat;
     }
 
-    public void setMeat(Meat meat) {
+    public void setMeat(MeatENUM meat) {
         this.meat = meat;
     }
 
-    public Cheese getCheese() {
+    public CheeseENUM getCheese() {
         return cheese;
     }
 
-    public void setCheese(Cheese cheese) {
+    public void setCheese(CheeseENUM cheese) {
         this.cheese = cheese;
     }
 
-    public Toppings getTopping() {
+    public ToppingsENUM getTopping() {
         return topping;
     }
 
-    public void setTopping(Toppings topping) {
+    public void setTopping(ToppingsENUM topping) {
         this.topping = topping;
     }
 
-    public Sauces getSauce() {
+    public SaucesENUM getSauce() {
         return sauce;
     }
 
-    public void setSauce(Sauces sauce) {
+    public void setSauce(SaucesENUM sauce) {
         this.sauce = sauce;
     }
 
