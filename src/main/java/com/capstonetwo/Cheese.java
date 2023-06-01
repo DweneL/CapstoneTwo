@@ -4,9 +4,8 @@ public enum Cheese {
     AMERICAN,
     PROVOLONE,
     CHEDDAR,
-    SWISS
-}
-public static class Cheeses {
+    SWISS;
+
     public static void main(String[] args) {
         //this wil show the enum values of cheeses
         System.out.println("Cheese selection: ");
