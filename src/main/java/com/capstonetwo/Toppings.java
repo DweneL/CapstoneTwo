@@ -13,8 +13,7 @@ import java.util.Scanner;
         CUCUMBERS,
         PICKLES,
         GUACAMOLE,
-        MUSHROOMS,
-    }
+        MUSHROOMS;
 
         //constructor i guesss? this is where we state were making list
         public static List<Toppings> getToppings(){
