@@ -1,0 +1,13 @@
+Order Details:
+Sandwich 1:
+Bread: WHITE
+Meat: BACON
+Cheese: PROVOLONE
+Toppings: JALAPENOS
+Sauce: RANCH
+Side: Mac
+Sandwich Size: 4
+Price: $0.0
+---------------------------
+Total Cost: $0.0
+===========================
