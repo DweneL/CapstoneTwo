@@ -1,11 +1,14 @@
 package com.capstonetwo;
 
+import java.util.ArrayList;
+
 public class Sandwich {
     private BreadENUM breadENUM;
     private MeatENUM meat;
     private CheeseENUM cheese;
-    private ToppingsENUM topping;
-    private SaucesENUM sauce;
+    private ArrayList <ToppingsENUM> toppings = new ArrayList<>();
+
+    private ArrayList<SaucesENUM> sauces = new ArrayList<>();
     private String side;
     private int sandwichSize;
     private static double price;
@@ -16,21 +19,8 @@ public class Sandwich {
     private boolean isExtraCheeseAdded = false;
     private boolean isToasted = false;
 
-    public Sandwich(BreadENUM breadENUM, MeatENUM meat, CheeseENUM cheese, ToppingsENUM topping, SaucesENUM sauce, String side, int sandwichSize, double price, boolean isCheeseAdded, boolean isMeatAdded, boolean isToppingsAdded, boolean isExtraMeatAdded, boolean isExtraCheeseAdded, boolean isToasted) {
-        this.breadENUM = breadENUM;
-        this.meat = meat;
-        this.cheese = cheese;
-        this.topping = topping;
-        this.sauce = sauce;
-        this.side = side;
+    public Sandwich( int sandwichSize) {
         this.sandwichSize = sandwichSize;
-        this.price = price;
-        this.isCheeseAdded = isCheeseAdded;
-        this.isMeatAdded = isMeatAdded;
-        this.isToppingsAdded = isToppingsAdded;
-        this.isExtraMeatAdded = isExtraMeatAdded;
-        this.isExtraCheeseAdded = isExtraCheeseAdded;
-        this.isToasted = isToasted;
     }
 
     public static void breadSize(int sandwichSize){
@@ -90,6 +80,16 @@ public class Sandwich {
     }
 
     public void addToppings (ToppingsENUM topping){
+        toppings.add(topping);
+
+    }
+
+    public ArrayList<ToppingsENUM> getToppings(){
+        return this.toppings;
+    }
+
+    public ArrayList<SaucesENUM> getSauces() {
+        return sauces;
     }
 
     public BreadENUM getBread() {
@@ -116,21 +116,6 @@ public class Sandwich {
         this.cheese = cheese;
     }
 
-    public ToppingsENUM getTopping() {
-        return topping;
-    }
-
-    public void setTopping(ToppingsENUM topping) {
-        this.topping = topping;
-    }
-
-    public SaucesENUM getSauce() {
-        return sauce;
-    }
-
-    public void setSauce(SaucesENUM sauce) {
-        this.sauce = sauce;
-    }
 
     public String getSide() {
         return side;

@@ -37,8 +37,10 @@ public class Receipt {
                 printWriter.println("Bread: " + sandwich.getBread());
                 printWriter.println("Meat: " + sandwich.getMeat());
                 printWriter.println("Cheese: " + sandwich.getCheese());
-                printWriter.println("Toppings: " + sandwich.getTopping());
-                printWriter.println("Sauce: " + sandwich.getSauce());
+                //use a for loop to list all the toppings
+               // printWriter.println("Toppings: " + sandwich.getTopping());
+                //same thing as line 40
+              //  printWriter.println("Sauce: " + sandwich.getSauce());
                 printWriter.println("Side: " + sandwich.getSide());
                 printWriter.println("Sandwich Size: " + sandwich.getSandwichSize());
                 printWriter.println("Price: $" + sandwich.getPrice());
