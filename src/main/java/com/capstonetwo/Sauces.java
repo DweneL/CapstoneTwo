@@ -2,7 +2,6 @@ package com.capstonetwo;
 import java.util.Arrays;
 import java.util.List;
 
-public class Sauces{
 public enum Sauces {
     MAYO,
     MUSTARD,
@@ -13,12 +12,12 @@ public enum Sauces {
     AU_JUS
 }
 //con
-    public static List<Sauce> getSauces() {
-        return Arrays.asList(Sauce.values());
+    public static List<Sauces> getSauces() {
+        return Arrays.asList(Sauces.values());
     }
-//lisst stauces from enum
+    //lisst stauces from enum
     public static void main(String[] args) {
-        List<Sauce> sauces = getSauces();
+        List<Sauces> sauces = getSauces();
 
 
 //dosplaus the sauces adn name
