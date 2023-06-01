@@ -10,7 +10,7 @@ public class Sandwich {
     private Sauces sauce;
     private String side;
     private int sandwichSize;
-    private double price;
+    private static double price;
     private boolean isCheeseAdded = false;
     private boolean isMeatAdded = false;
     private boolean isToppingsAdded = false;
@@ -35,7 +35,7 @@ public class Sandwich {
         this.isToasted = isToasted;
     }
 
-    public void addBread(Bread bread){
+    public static void breadSize(int sandwichSize){
         if (sandwichSize == 4){
             price = 5.50;
         }

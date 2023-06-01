@@ -59,7 +59,7 @@ public class HomeScreen {
         }
     }
 
-    public void sandwich() {
+    public static void sandwich() {
         boolean appRunning = true;
         while (appRunning) {
             Scanner myScanner = new Scanner(System.in);
@@ -67,15 +67,15 @@ public class HomeScreen {
             System.out.println("Your sandwich can be 4, 8, or 12 inches.");
             System.out.println("What size would you like?");
 
-            switch (myScanner.nextLine()) {
-                case "4":
-                    Sandwich.setSandwichSize(4);
+            switch (myScanner.nextInt()) {
+                case 4:
+                    Sandwich.breadSize(4);
                     break;
-                case "8":
-                    Sandwich.setSandwichSize(8);
+                case 8:
+                    Sandwich.breadSize(8);
                     break;
-                case "12":
-                    Sandwich.setSandwichSize(12);
+                case 12:
+                    Sandwich.breadSize(12);
                     break;
 
                 default:
@@ -84,6 +84,7 @@ public class HomeScreen {
         }
 
     }
+
 
 
 }
