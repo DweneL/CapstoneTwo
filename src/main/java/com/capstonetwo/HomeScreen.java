@@ -37,7 +37,7 @@ public class HomeScreen {
 
         switch (myScanner.nextLine()){
             case "1":
-
+                Sandwich();
                 break;
             case "2":
 
@@ -52,7 +52,12 @@ public class HomeScreen {
             case "0":
 
                 break;
+
+            default:
+                System.out.println("UNRECOGNIZED ENTRY");
             }
         }
     }
+
+
 }

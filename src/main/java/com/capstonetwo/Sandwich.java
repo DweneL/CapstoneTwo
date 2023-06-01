@@ -1,5 +1,7 @@
 package com.capstonetwo;
 
+import java.util.Scanner;
+
 public class Sandwich {
     private Bread bread;
     private Meat meat;
@@ -21,7 +23,32 @@ public class Sandwich {
         this.price = price;
     }
 
+    public void sandwich() {
+        boolean appRunning = true;
+        while (appRunning) {
+            Scanner myScanner = new Scanner(System.in);
 
+            System.out.println("Your sandwich can be 4, 8, or 12 inches.");
+            System.out.println("What size would you like?");
+
+
+            switch (myScanner.nextLine()) {
+                case "4":
+                    Sandwich.setSandwichSize(4);
+                    break;
+                case "8":
+                    Sandwich.setSandwichSize(8);
+                    break;
+                case "12":
+                    Sandwich.setSandwichSize(12);
+                    break;
+
+                default:
+                    System.out.println("UNRECOGNIZED ENTRY");
+            }
+        }
+
+    }
 
     public void addBread(Bread bread){
         if (sandwichSize == 4){
