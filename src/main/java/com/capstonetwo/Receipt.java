@@ -31,6 +31,7 @@ public class Receipt {
                 // ... existing code ...
 
                 // Write the sandwich details to the file
+
                 printWriter.println("Sandwich " + (i + 1) + ":");
                 printWriter.println("Bread: " + Sandwich.getBread());
                 printWriter.println("Meat: " + Sandwich.getMeat());

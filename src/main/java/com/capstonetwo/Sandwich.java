@@ -1,5 +1,7 @@
 package com.capstonetwo;
 
+import java.util.Scanner;
+
 public class Sandwich {
     private Bread bread;
     private Meat meat;
@@ -8,7 +10,7 @@ public class Sandwich {
     private Sauces sauce;
     private String side;
     private int sandwichSize;
-    private double price;
+    private static double price;
     private boolean isCheeseAdded = false;
     private boolean isMeatAdded = false;
     private boolean isToppingsAdded = false;
@@ -16,14 +18,24 @@ public class Sandwich {
     private boolean isExtraCheeseAdded = false;
     private boolean isToasted = false;
 
-    public Sandwich(int sandwichSize, double price) {
+    public Sandwich(Bread bread, Meat meat, Cheese cheese, Toppings topping, Sauces sauce, String side, int sandwichSize, double price, boolean isCheeseAdded, boolean isMeatAdded, boolean isToppingsAdded, boolean isExtraMeatAdded, boolean isExtraCheeseAdded, boolean isToasted) {
+        this.bread = bread;
+        this.meat = meat;
+        this.cheese = cheese;
+        this.topping = topping;
+        this.sauce = sauce;
+        this.side = side;
         this.sandwichSize = sandwichSize;
         this.price = price;
+        this.isCheeseAdded = isCheeseAdded;
+        this.isMeatAdded = isMeatAdded;
+        this.isToppingsAdded = isToppingsAdded;
+        this.isExtraMeatAdded = isExtraMeatAdded;
+        this.isExtraCheeseAdded = isExtraCheeseAdded;
+        this.isToasted = isToasted;
     }
 
-
-
-    public void addBread(Bread bread){
+    public static void breadSize(int sandwichSize){
         if (sandwichSize == 4){
             price = 5.50;
         }
@@ -35,7 +47,6 @@ public class Sandwich {
         } else {
             System.out.println("The size you have chosen is not available");
         }
-
     }
 
     public void addMeat(Meat meat){
@@ -82,28 +93,6 @@ public class Sandwich {
 
     public void addToppings (Toppings topping){
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public Bread getBread() {
         return bread;
