@@ -1,31 +1,27 @@
 package com.capstonetwo;
+
 import java.util.Arrays;
 import java.util.List;
 
-public enum Sauces {
-    MAYO,
-    MUSTARD,
-    KETCHUP,
-    RANCH,
-    THOUSAND_ISLAND,
-    VINAIGRETTE,
-    AU_JUS
-}
-//con
-    public static List<Sauces> getSauces() {
-        return Arrays.asList(Sauces.values());
+public class SaucesCLASS {
+
+    //con
+    public static List<SaucesENUM> getSauces() {
+        return Arrays.asList(SaucesENUM.values());
     }
+
     //lisst stauces from enum
-    public static void main(String[] args) {
-        List<Sauces> sauces = getSauces();
+    public static void() {
+        List<SaucesENUM> sauces = getSauces();
 
 
 //dosplaus the sauces adn name
         System.out.println("Available sauces:");
-        for (Sauce sauce : sauces) {
+        for (SaucesENUM sauce : sauces) {
             System.out.println(sauce.name());
         }
     }
+}
 
 // for the sauces i think there shoudl be a select feature too
 //like in toppings

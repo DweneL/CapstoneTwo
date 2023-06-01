@@ -1,12 +1,9 @@
 package com.capstonetwo;
+
 import java.util.ArrayList;
 import java.util.Scanner;
-public enum Chips {
-    POPCORN,
-    JALAPENO,
-    PLANTAIN,
-    CHEETOS
-}
+
+public class ChipsCLASS {
     public static void main(String[] args) {
         displayChips();
         selectChips();
@@ -67,3 +64,4 @@ public enum Chips {
         myScanner.close();
     }
 }
+
