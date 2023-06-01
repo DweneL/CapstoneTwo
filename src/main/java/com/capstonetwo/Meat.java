@@ -17,6 +17,7 @@ public enum Meat {
             }
             //ask what selection user would like
             System.out.println("Select any meat option: ");
+            //prints selection
         }
     }
 }
