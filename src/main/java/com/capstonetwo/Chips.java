@@ -66,7 +66,6 @@ public enum Chips {
             }
             System.out.println("Total price: $" + totalPrice);
         }
-
         myScanner.close();
     }
 }
