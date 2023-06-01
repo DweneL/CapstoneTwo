@@ -81,6 +81,20 @@ public class HomeScreen {
                 default:
                     System.out.println("UNRECOGNIZED ENTRY");
             }
+
+            System.out.println("What type of meat would you like?");
+            //display meat enum as a list
+            //record the meat selection
+            //finds sandwich size and records related price
+            // this.addMeat();
+            //add an option for no meat added to method in sandwich
+
+            System.out.println("Would you like extra meat for" +  +);
+            //finds sandwich size and prints related price for extra meat
+
+            //same for cheese
+
+
         }
 
     }
