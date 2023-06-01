@@ -62,6 +62,3 @@ public class Drinks {
         this.cost = cost;
     }
 }
-
-
-

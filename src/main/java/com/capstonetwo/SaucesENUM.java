@@ -1,8 +1,6 @@
 package com.capstonetwo;
-import java.util.Arrays;
-import java.util.List;
 
-public enum Sauces {
+public enum SaucesENUM {
     MAYO,
     MUSTARD,
     KETCHUP,

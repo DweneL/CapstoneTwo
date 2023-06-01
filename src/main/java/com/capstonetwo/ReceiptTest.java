@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ReceiptTest {
     @Test
     public void printReceiptTest(){
-        Sandwich sandwich = new Sandwich(Bread.WHITE, Meat.BACON, Cheese.PROVOLONE, Toppings.JALAPENOS, Sauces.RANCH,"Mac",
+        Sandwich sandwich = new Sandwich(BreadENUM.WHITE, MeatENUM.BACON, CheeseENUM.PROVOLONE, ToppingsENUM.JALAPENOS, SaucesENUM.RANCH,"Mac",
                 4, 0, true,true,true,true, true, true);
         List<Sandwich> sandwichList = new ArrayList<>();
         sandwichList.add(sandwich);

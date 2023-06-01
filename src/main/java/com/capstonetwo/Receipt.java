@@ -8,7 +8,7 @@ import java.util.List;
 public class Receipt {
     private List<Sandwich> sandwiches;
     private List<Drinks> drinks;
-    private List<Chips> chips;
+
     private double totalCost;
     public void addSandwich(Sandwich sandwich) {
         sandwiches.add(sandwich);
