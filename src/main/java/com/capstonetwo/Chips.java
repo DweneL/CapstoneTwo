@@ -5,8 +5,8 @@ public enum Chips {
     POPCORN,
     JALAPENO,
     PLANTAIN,
-    CHEETOS
-}
+    CHEETOS;
+
     public static void main(String[] args) {
         displayChips();
         selectChips();
