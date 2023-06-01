@@ -11,7 +11,7 @@ public class SaucesCLASS {
     }
 
     //lisst stauces from enum
-    public static void() {
+    public static void listSauces() {
         List<SaucesENUM> sauces = getSauces();
 
 
@@ -28,3 +28,4 @@ public class SaucesCLASS {
 //something that can connect au jus to meats too or make it different
 //if not is okay
 //like ik in toppings will most likely be within the sandwich class
+

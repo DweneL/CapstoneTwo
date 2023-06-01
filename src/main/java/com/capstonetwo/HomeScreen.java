@@ -89,7 +89,7 @@ public class HomeScreen {
             // this.addMeat();
             //add an option for no meat added to method in sandwich
 
-            System.out.println("Would you like extra meat for" +  +);
+            System.out.println("Would you like extra meat for");
             //finds sandwich size and prints related price for extra meat
 
             //same for cheese
