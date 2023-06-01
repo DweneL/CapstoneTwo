@@ -37,7 +37,7 @@ public class HomeScreen {
 
         switch (myScanner.nextLine()){
             case "1":
-
+                sandwich();
                 break;
             case "2":
 
@@ -52,7 +52,39 @@ public class HomeScreen {
             case "0":
 
                 break;
+
+            default:
+                System.out.println("UNRECOGNIZED ENTRY");
             }
         }
     }
+
+    public static void sandwich() {
+        boolean appRunning = true;
+        while (appRunning) {
+            Scanner myScanner = new Scanner(System.in);
+
+            System.out.println("Your sandwich can be 4, 8, or 12 inches.");
+            System.out.println("What size would you like?");
+
+            switch (myScanner.nextInt()) {
+                case 4:
+                    Sandwich.breadSize(4);
+                    break;
+                case 8:
+                    Sandwich.breadSize(8);
+                    break;
+                case 12:
+                    Sandwich.breadSize(12);
+                    break;
+
+                default:
+                    System.out.println("UNRECOGNIZED ENTRY");
+            }
+        }
+
+    }
+
+
+
 }
