@@ -9,7 +9,7 @@ public class HomeScreen {
             System.out.println("Enter 1 to Order");
             System.out.println("Enter 0 to exit");
 
-            switch (myScanner.nextLine()){
+            switch (myScanner.nextLine()) {
                 case "1":
                     order();
                     break;
@@ -35,29 +35,31 @@ public class HomeScreen {
             System.out.println("Enter 4 to checkout.");
             System.out.println("Enter 0 to cancel.");
 
-        switch (myScanner.nextLine()){
-            case "1":
-                sandwich();
-                break;
-            case "2":
+            switch (myScanner.nextLine()) {
+                case "1":
+                    sandwich();
+                    break;
+                case "2":
 
-                break;
-            case "3":
-                boolean addChips = true;
-                //adds the price of chips
-                break;
-            case "4":
+                    break;
+                case "3":
+                    boolean addChips = true;
+                    //adds the price of chips
+                    break;
+                case "4":
 
-                break;
-            case "0":
+                    break;
+                case "0":
 
-                break;
+                    break;
 
-            default:
-                System.out.println("UNRECOGNIZED ENTRY");
+                default:
+                    System.out.println("UNRECOGNIZED ENTRY");
             }
         }
     }
+
+
 
     public static void sandwich() {
         boolean appRunning = true;
@@ -69,36 +71,46 @@ public class HomeScreen {
 
             switch (myScanner.nextInt()) {
                 case 4:
-                    Sandwich.breadSize(4);
-                    break;
-                case 8:
-                    Sandwich.breadSize(8);
-                    break;
-                case 12:
-                    Sandwich.breadSize(12);
-                    break;
+                    for (BreadENUM bread : BreadENUM.values()) {
+                        System.out.println(bread);
+                        //Sandwich.breadSize(4);
+                        //  break;
+                        //case 8:
+                        // for (BreadENUM bread2 : BreadENUM.values()) {
+                        //   System.out.println(bread2);
+                        //Sandwich.breadSize(8);
+                        //   break;
+                        // case 12:
+                        // for (BreadENUM bread3 : BreadENUM.values()) {
+                        //    System.out.println(bread3);
+                        //Sandwich.breadSize(12);
+                        //  break;
 
-                default:
-                    System.out.println("UNRECOGNIZED ENTRY");
+                        // default:
+                        //  System.out.println("UNRECOGNIZED ENTRY");
+                    }
+
+                    System.out.println("______________________________________");
+
+                    System.out.println("What type of meat would you like?");
+
+
+                    //display meat enum as a list
+                    //record the meat selection
+                    //finds sandwich size and records related price
+                    // this.addMeat();
+                    //add an option for no meat added to method in sandwich
+
+                    System.out.println("Would you like extra meat for");
+                    //finds sandwich size and prints related price for extra meat
+
+                    //same for cheese
+
+
             }
-
-            System.out.println("What type of meat would you like?");
-            //display meat enum as a list
-            //record the meat selection
-            //finds sandwich size and records related price
-            // this.addMeat();
-            //add an option for no meat added to method in sandwich
-
-            System.out.println("Would you like extra meat for");
-            //finds sandwich size and prints related price for extra meat
-
-            //same for cheese
-
 
         }
 
+
     }
-
-
-
 }
