@@ -58,9 +58,12 @@ public class Receipt {
 
     }
     private double calculateTotalCost(){
+
         var sandwichCost = this.sandwiches.stream().mapToDouble(Sandwich::getPrice).sum();
-        return sandwichCost;
+        var drinkCost = this.drinks.stream().mapToDouble(Drinks::getCost).sum();
+        return calculateTotalCost();
     }
+
 }
 
 
